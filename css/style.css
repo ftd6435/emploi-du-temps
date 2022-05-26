@@ -615,6 +615,10 @@ footer .newletter h3{
 
 /* les media query rensponsive du header  */
 @media (max-width: 900px) {
+    section{
+        padding: 0 5rem;
+    }
+
     .centerbar .logo img{
         width: 200px;
         margin-right: 1.5rem;
@@ -651,6 +655,10 @@ footer .newletter h3{
 }
 
 @media (max-width: 768px){
+    section{
+        padding: 0 2rem;
+    }
+
     .centerbar .logo img{
         height: 80px;
         width: 150px;

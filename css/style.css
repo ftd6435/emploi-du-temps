@@ -38,6 +38,19 @@ p{
     padding-bottom: 0.8rem;
 }
 
+nav .pagination .page-link{
+    color: green;
+    font-size: 1.6rem;
+    padding: 0.5rem 1rem;
+    transition: all 0.5s ease;
+}
+
+nav .pagination .active,
+nav .pagination .page-link:hover{
+    color: #fff;
+    background: green;
+}
+
 /* les variables */
 :root{
     --secondary: #111;
@@ -63,7 +76,15 @@ p{
 .bv-prof{
     position: relative;
     background: url('../assets/img/prof-bv.jpg') center center/cover no-repeat;
-    /* filter: brightness(65%); */
+}
+
+.bv-prof .bg-sombre{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .bv-content{
@@ -79,6 +100,7 @@ p{
     text-transform: uppercase;
     line-height: 50px;
 }
+
 /* mise en forme du menu responsive  */
 .navbar .menu{
     display: none;
@@ -171,7 +193,7 @@ p{
     background: transparent;
 }
 
-.btn-connexion, .contact .btn-contact{
+.btn-connexion, .btn-contact{
     cursor: pointer;
     padding: 0.5rem 1.5rem;
     margin-right: 1rem;
@@ -184,11 +206,11 @@ p{
     transition: all 0.3s ease;
 }
 
-.btn-connexion:hover, .contact .btn-contact:hover {
+.btn-connexion:hover, .btn-contact:hover {
     background: transparent;
 }
 
-.contact .btn-contact:hover{
+.btn-contact:hover{
     color: #111;
 }
 
@@ -399,6 +421,25 @@ a .big-card .card-text{
 .big-card .card-content{
     padding: 1rem;
 }
+
+/* pour les carte de la page actualité des prof  */
+.prof-page a .big-card{
+    margin-bottom: 3rem;
+    transition: all 0.7s ease;
+}
+
+.prof-page a .big-card:hover{
+    transform: scale(105%);
+}
+
+.prof-page a .big-card .card-text{
+    font-size: 1.6rem;
+}
+
+.prof-page a .big-card img{
+    height: 200px;
+}
+/* fin de la mise en forme pour les carte de la page actualité des prof  */
 
 .small-card{
     display: flex;
@@ -791,6 +832,93 @@ a.btn-read:hover{
 }
 
 /* FIN DE LA MISE EN FORME DE LA PAGE A PROPOS  */
+
+/* DEBUT DE LA MISE EN FORME DE LA SINGLE PAGE  */
+.single .title{
+    text-align: justify;
+    font-family: var(--source-sans-pro), sans-serif;
+    font-weight: 700;
+}
+
+.single .text-muted{
+    font-size: 1.7rem;
+    font-family: var(--source-sans-pro), sans-serif;
+}
+
+.single .text-muted span{
+    color: #111;
+    font-weight: 600;
+}
+
+.single .row img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.single .row .icon .share{
+    font-weight: 500;
+    border: 1px solid #bbb;
+    padding: 0.2rem 0.5rem;
+    margin-right: 1rem;
+}
+
+.single .row .icon .icons svg{
+    display: inline-block;
+    margin: 0 0.3rem;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+}
+
+.single .row .text{
+    font-family: var(--poppins), sans-serif;
+    text-align: justify;
+}
+
+.single .row .col-md-6,
+.single .comment-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.single .comment-content{
+    margin-bottom: 2rem;
+}
+
+.single .comment{
+    font-weight: 600;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    font-family: var(--source-sans-pro), sans-serif;
+}
+
+.single .comment-content .comment-1{
+    display: grid;
+    grid-template-columns: 80px auto;
+}
+
+.single .comment-1 .comment-img img{
+    height: 80px;
+    border-radius: 50%;
+}
+
+.single .comment-1 .comment-text{
+    padding-left: 2rem;
+    font-family: var(--poppins), sans-serif;
+}
+
+.single .comment-1 .comment-text .comment-author{
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.single .row .col-md-6 input,
+.single .row .col-md-6 textarea{
+    font-size: 1.5rem;
+}
+
+/* FIN DE LA MISE EN FORME DE LA SINGLE PAGE  */
 
 /* mise en forme du pied de page footer  */
 .btn-return{
